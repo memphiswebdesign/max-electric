@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+f<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -33,7 +33,9 @@
 <body>
 <div class="boxed_wrapper">
 
-<div class="preloader"></div> 
+<!-- <div class="preloader"></div>  -->
+
+<div id="header" style="display: none;"></div>
 
 <!-- Start Top Bar area -->  
 <section class="top-bar-area">
@@ -857,6 +859,9 @@
 
 <!-- main jQuery -->
 <script src="js/jquery.js"></script>
+<script type="text/javascript">
+    $("#header").load("inc/header.html");
+</script>
 <!-- Wow Script -->
 <script src="js/wow.js"></script>
 <!-- bootstrap -->
