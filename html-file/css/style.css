@@ -326,6 +326,17 @@ li {
     flex-wrap: wrap;
     align-items: center;
 }
+.flex-align-center {align-items: center;}
+.flex-justify-between {justify-content: space-between;}
+.flex-justify-center {justify-content: center;}
+.flex-align-left {margin-right: auto;}
+.flex-align-right {margin-left: auto;}
+@media(min-width: 767px) { 
+    .flex-align-right-md {margin-left: auto;}
+}
+@media(min-width: 992px) {
+    .flex-align-right-lg {margin-left: auto;}
+}
 
 .owl-nav-style-one{}
 .owl-nav-style-one .owl-controls { }
@@ -766,6 +777,7 @@ select:focus {
 .top-bar{
     position: relative;
     display: block;
+    text-align: center;
     width: 100%;
 }
 .top-bar .top-left {
@@ -779,7 +791,7 @@ select:focus {
 .top-bar .top-right {
     position: relative;
     display: block;
-    max-width: 730px;
+    /*max-width: 730px;*/
     width: 100%;
 }
 .top-bar .top-right ul {
@@ -788,7 +800,7 @@ select:focus {
 }
 .top-bar .top-right ul li {
     display: inline-block;
-    float: left;
+    /*float: left;*/
     color: #fec144;
     font-size: 15px;
     font-weight: 500;
@@ -825,16 +837,28 @@ select:focus {
 ===============================================*/
 .header-style1-area {
     display: block;
-    background: #ffffff;
-    padding: 29px 0;
+    background: #fff;
+    padding: 22px 0;
 }
 .header-style1-logo {
     display: block;
     margin: 0;
 }
+#logo {
+    width: 146px;
+}
+header .inner-content {}
+
+@media(max-width: 991px) {
+    header .inner-content {justify-content: center;}
+}
+
+@media(min-width: 992px) {
+    #logo {width: 133px;}
+}
 .header-style1-logo a {
     display: block;
-    margin: 3px 0 4px;
+    margin: 0;
 }
 
 .headers1-header-right{
@@ -860,12 +884,21 @@ select:focus {
     padding-right: 0;
     border: none;
 }
-.headers1-header-right ul li .single-item{
+.headers1-header-right ul li .single-item {
     position: relative;
     display: block;
 }
+.headers1-header-right ul li .single-item.flex-box {
+    display: inline-flex;
+    align-items: center;
+}
+
 .headers1-header-right ul li .single-item .icon{
     width: 35px;
+}
+.headers1-header-right ul li .single-item .icon-large {
+    width: 110px;
+    margin-right: 5px;
 }
 .headers1-header-right ul li .single-item .icon span:before{
     position: relative;
@@ -1017,6 +1050,25 @@ select:focus {
     transition: all 0.4s ease-in-out 0s;
 }
 
+
+/*** 
+=====================================================
+    Badge & Labels
+=====================================================
+***/
+.badge {
+    padding: 6px 8px;
+    color: #fff; 
+    text-shadow: none;
+    background-color: #666;
+}
+
+.badge.pill {border-radius: 30px;}
+
+.badge.yellow {
+    color: #222;
+    background-color: #fec144;
+}
 
 
 /*** 
@@ -4223,7 +4275,7 @@ box-shadow: 0px 2px 8px 0px rgba(242,242,242,1);
 .single-featured-item .single-box .overlay-content .box .inner-content{
     display: table-cell;
     text-align: center;
-    vertical-align: middle; 
+    vertical-align: middle;
     padding: 0 20px;
 }
 .single-featured-item .single-box .overlay-content .box .inner-content h3{

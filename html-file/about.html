@@ -1,4 +1,4 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -35,15 +35,13 @@ f<!DOCTYPE html>
 
 <!-- <div class="preloader"></div>  -->
 
-<div id="header" style="display: none;"></div>
-
 <!-- Start Top Bar area -->  
 <section class="top-bar-area">
     <div class="container">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12">
                 <div class="top-bar clearfix">
-                    <div class="top-left float-left clearfix">
+                    <!-- <div class="top-left float-left clearfix">
                         <div class="language-switcher">
                             <div id="polyglotLanguageSwitcher">
                                 <form action="#">
@@ -57,16 +55,17 @@ f<!DOCTYPE html>
                                 </form>
                             </div>
                         </div>
-                    </div>
-                    <div class="top-right float-right">
+                    </div> -->
+                    <div class="top-right">
                         <ul class="top-contact-info">
-                            <li>Do you need help? Here Us:</li>
-                            <li><a href="#"><span class="icon-phone"></span>(555) 5678 12340</a></li>
-                            <li><a href="#"><span class="icon-mail"></span>info@example.com</a></li>
-                            <li><a href="#"><span class="icon-clock"></span>Mon - Fri: 10am - 5pm</a></li>
-                        </ul>   
+                            <li>Here to Help - Let&#39;s Talk:</li>
+                            <li><a href="tel:901.413.4646"><span class="icon-phone"></span>(901) 413-4646</a></li>
+                            <li><a href="mailto:maxelectric.inc@gmail.com"><span class="icon-mail"></span>maxelectric.inc@gmail.com</a></li>
+                            <li><a href="#"><span class="icon-clock"></span>Mon - Fri: 7am - 4pm</a>    </li>
+                            <li><a href="https://goo.gl/M6ju6h" title="Location | View Map" target="_blank"><span class="fa fa-map"></span></a></li>
+                        </ul>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </div>
@@ -78,22 +77,22 @@ f<!DOCTYPE html>
     <div class="container">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12">
-                <div class="inner-content clearfix">
+                <div class="inner-content clearfix flex-box flex-align-center flex-justify-between">
                     <div class="header-style1-logo float-left">
                         <a href="index.html">
-                            <img src="images/resources/logo.png" alt="Awesome Logo">
+                            <img id="logo" src="images/resources/logo.png" alt="Max Electric Logo">
                         </a>
                     </div>   
-                    <div class="headers1-header-right float-right">
+                    <div class="headers1-header-right flex-align-right-lg">
                         <ul>
                             <li>
-                                <div class="single-item">
-                                    <div class="icon">
-                                        <span class="icon-stamp"></span>    
+                                <div class="single-item flex-box">
+                                    <div class="icon-large">
+                                        <img src="images/resources/bbb-logo.svg" alt="Better Business Bureau">
                                     </div>
-                                    <div class="text">
-                                        <p>Certified Company</p> 
-                                        <span>ISO 9001:2005</span>   
+                                    <div class="single-item-inner">
+                                        <span class="badge yellow">A+ Rating</span> 
+                                        <a href="https://www.bbb.org/us/ms/olive-branch/profile/electrician/max-electric-inc-0543-44037810" target="_blank">View Reviews <i class="fa fa-arrow-right external"></i></a>
                                     </div>
                                 </div>
                             </li>
@@ -104,8 +103,8 @@ f<!DOCTYPE html>
                                         <span class="icon-shield"></span>    
                                     </div>
                                     <div class="text">
-                                        <p>Leading Industry</p> 
-                                        <span>In Europe</span>   
+                                        <p>Leading Electricians</p> 
+                                        <span>In the Mid-South</span>   
                                     </div>
                                 </div>
                             </li>
@@ -191,7 +190,7 @@ f<!DOCTYPE html>
                     </nav>
                     
                     <div class="mainmenu-right">
-                        <div class="outer-search-box">
+                        <!-- <div class="outer-search-box">
                             <div class="seach-toggle"><i class="fa fa-search"></i></div>
                             <ul class="search-box">
                                 <li>
@@ -203,16 +202,28 @@ f<!DOCTYPE html>
                                     </form>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="cart-box">
+                        </div> -->
+                        <!-- <div class="cart-box">
                             <a href="shoping-cart.html"><span class="icon icon-bag"><span class="number">0</span></span></a>
-                        </div>
+                        </div> -->
                         <div class="social-links-box">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li>
+                                    <a
+                                    href="https://www.bbb.org/us/ms/olive-branch/profile/electrician/max-electric-inc-0543-44037810"
+                                    target="_blank">
+                                        <i class="fa fa-building"></i>
+                                        <span>BBB<span>
+                                        <i class="fa fa-arrow-right external"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.buildzoom.com/contractor/max-electric-inc" target="_blank">
+                                        <i class="fa fa-building"></i>
+                                        <span>BuildZoom</span>
+                                        <i class="fa fa-arrow-right external"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>    
                     </div> 
@@ -859,9 +870,6 @@ f<!DOCTYPE html>
 
 <!-- main jQuery -->
 <script src="js/jquery.js"></script>
-<script type="text/javascript">
-    $("#header").load("inc/header.html");
-</script>
 <!-- Wow Script -->
 <script src="js/wow.js"></script>
 <!-- bootstrap -->
