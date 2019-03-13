@@ -60,13 +60,13 @@ function languageSwitcher() {
 //===Header Sticky===
 function stickyHeader() {
     if ($('.stricky').length) {
-        var strickyScrollPos = 100;
+        var strickyScrollPos = 280;
         if ($(window).scrollTop() > strickyScrollPos) {
             $('.stricky').addClass('stricky-fixed');
-            $('.scroll-to-top').fadeIn(1500);
+            // $('.scroll-to-top').fadeIn(1500);
         } else if ($(this).scrollTop() <= strickyScrollPos) {
             $('.stricky').removeClass('stricky-fixed');
-            $('.scroll-to-top').fadeOut(1500);
+            // $('.scroll-to-top').fadeOut(1500);
         }
     };
 }
