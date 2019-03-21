@@ -1,0 +1,100 @@
+<!--Start mainmenu area-->
+<section class="mainmenu-area stricky">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-content clearfix">
+                    <nav class="main-menu clearfix">
+                        <div class="navbar-header clearfix">   	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                            	 {% for item in site.nav %}
+							      <li class="dropdown"><a href="{{ item.url }}">{{ item.title }}</a></li>
+							   	{% endfor %}
+                                <li class="dropdown"><a href="index.html">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Home Page 01</a></li>
+                                        <li><a href="index-2.html">Home Page 02</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="current"><a href="about.html">About Us</a></li>
+                                <li class="dropdown"><a href="services.html">Solutions</a>
+                                    <ul>
+                                        <li><a href="ser-gas-petroleum.html">Gas & Petroleum</a></li>
+                                        <li><a href="ser-standby-power.html">Standby Power</a></li>
+                                        <li><a href="ser-agriculture.html">Agriculture</a></li>
+                                        <li><a href="ser-military-contracts.html">Military Contracts</a></li>
+                                        <li><a href="ser-oe-manufactures.html">OE Manufactures</a></li>
+                                        <li><a href="ser-marine-contracts.html">Marine Contracts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="blog.html">Blog</a>
+                                    <ul>
+                                        <li><a href="blog.html">Blog Default</a></li>
+                                        <li><a href="blog-large.html">Blog Large Image</a></li>
+                                        <li><a href="blog-single.html">Blog Single Post</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="shop.html">Shop</a>
+                                    <ul>
+                                        <li><a href="shop.html">Shop Products</a></li>
+                                        <li><a href="shop-single.html">Products Single</a></li>
+                                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="account.html">My Account</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Pages</a>
+                                    <ul>
+                                        <li class="dropdown"><a href="gallery-v1.html">Gallery</a>
+                                            <ul>
+                                                <li><a href="gallery-v1.html">Gallery 01</a></li>
+                                                <li><a href="gallery-v2.html">Gallery 02</a></li>    
+                                            </ul>    
+                                        </li>
+                                        <li><a href="case-studies.html">Case Studies</a></li>
+                                        <li><a href="case-single.html">Case Single</a></li>
+                                        <li><a href="faq.html">FAQ’s</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    
+                    <div class="mainmenu-right">
+                        <div class="social-links-box">
+                            <ul>
+                                <li>
+                                    <a
+                                    href="https://www.bbb.org/us/ms/olive-branch/profile/electrician/max-electric-inc-0543-44037810"
+                                    target="_blank">
+                                        <i class="fa fa-building"></i>
+                                        <span>BBB<span>
+                                        <i class="fa fa-arrow-right external"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.buildzoom.com/contractor/max-electric-inc" target="_blank">
+                                        <i class="fa fa-building"></i>
+                                        <span>BuildZoom</span>
+                                        <i class="fa fa-arrow-right external"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                 
+<!--End mainmenu area-->
