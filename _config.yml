@@ -36,6 +36,12 @@ nav:
 - title: Services
   url: /services
 
+- title: Work
+  url: /work
+
+- title: Contact
+  url: /contact
+
 # Build settings
 markdown: kramdown
 theme: minima

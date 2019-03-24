@@ -1,4 +1,4 @@
-<!--Start mainmenu area-->
+<!-- Start mainmenu area-->
 <section class="mainmenu-area stricky">
     <div class="container">
         <div class="row">
@@ -14,10 +14,22 @@
                         </div>
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                            	 {% for item in site.nav %}
-							      <li class="dropdown"><a href="{{ item.url }}">{{ item.title }}</a></li>
-							   	{% endfor %}
-                                <li class="dropdown"><a href="index.html">Home</a>
+                            	{% for item in site.nav %}
+							      <li class="dropdown {% if page.url == item.url %}current{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+						   		{% endfor %}
+
+						   		<!-- {% for item in site.nav %}
+							        {% assign current = nil %}
+							        {% if page.url contains item.url %}
+							            {% assign current = 'current' %}
+							        {% endif %}
+							        <li class="dropdown {{ current }}">
+							            <a href="{{ item.url }}">{{ item.title }}</a>
+							        </li>
+							    {% endfor %} -->
+
+
+                                <!-- <li class="dropdown"><a href="index.html">Home</a>
                                     <ul>
                                         <li><a href="index.html">Home Page 01</a></li>
                                         <li><a href="index-2.html">Home Page 02</a></li>
@@ -65,7 +77,7 @@
                                         <li><a href="coming-soon.html">Coming Soon</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li> -->
                             </ul>
                         </div>
                     </nav>
@@ -97,4 +109,4 @@
         </div>
     </div>
 </section>                 
-<!--End mainmenu area-->
+<!--End mainmenu area
