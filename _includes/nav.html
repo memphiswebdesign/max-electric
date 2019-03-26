@@ -15,19 +15,41 @@
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
                             	{% for item in site.nav %}
-							      <li class="dropdown {% if page.url == item.url %}current{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+							      <li class="dropdown">
+                                    <a href="{{ item.url }}">{{ item.title }}</a></li>
+
 						   		{% endfor %}
 
-						   		<!-- {% for item in site.nav %}
-							        {% assign current = nil %}
-							        {% if page.url contains item.url %}
-							            {% assign current = 'current' %}
-							        {% endif %}
-							        <li class="dropdown {{ current }}">
-							            <a href="{{ item.url }}">{{ item.title }}</a>
-							        </li>
-							    {% endfor %} -->
+                                <!-- New Nav ... FAIL -->
+                                <!-- {% assign links = site.nav %}
+                                {% for link in links %}
+                                    {% assign class = nil %}
+                                    {% if page.url contains item.url %}
+                                        {% assign class = 'active' %}
+                                    {% endif %}
+                                    {% if link.sublinks %}
+                                        <li class="dropdown {{ class }}">
+                                            <a href="{{ item.url }}">{{ item.title }}</a>
+                                            <ul>
+                                                {% for sublink in link.sublinks %}
+                                                    {% if sublink.title == 'separator' %}
+                                                        <li role="separator" class="divider"></li>
+                                                    {% else %}
+                                                        <li>
+                                                            <a href="{{ item.url }}">{{ item.title }}</a>
+                                                        </li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                    {% else %}
+                                        <li class="dropdown {{ class }}">
+                                            <a href="{{ item.url }}">{{ item.title }}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %} -->
 
+                                <!-- New Nav END -->
 
                                 <!-- <li class="dropdown"><a href="index.html">Home</a>
                                     <ul>

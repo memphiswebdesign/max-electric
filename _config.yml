@@ -36,6 +36,14 @@ nav:
 - title: Services
   url: /services
 
+  sublinks:
+  - title: Piece 1
+    url: /piece1
+  - title: Piece 2
+    url: /piece2
+  - title: Piece 3
+    url: /piece3
+
 - title: Work
   url: /work
 
