@@ -50,6 +50,9 @@ nav:
 - title: Contact
   url: /contact
 
+- title: Contact Success
+  url: /contact-success
+
 # Build settings
 markdown: kramdown
 theme: minima
