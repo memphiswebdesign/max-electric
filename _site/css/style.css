@@ -9323,12 +9323,12 @@ box-shadow: 0px 1px 5px 3px rgba(242,242,242,1);
     z-index: 3;
 }
 .quick-contact-box:before {
-    position: absolute;
-    background: url(../images/pattern/quick-contact-box-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;
     content: "";
+    position: absolute;
+    background: url(../images/pattern/quick-contact-electrician.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
     top: 0;
     left: 0;
     bottom: 0;
@@ -9337,7 +9337,7 @@ box-shadow: 0px 1px 5px 3px rgba(242,242,242,1);
 }
 .quick-contact-box:after {
     position: absolute;
-    background: rgba(254, 193, 71, 0.95);
+    background: rgba(254, 193, 71, 0.93);
     content: "";
     top: 0;
     left: 0;
