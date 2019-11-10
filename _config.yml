@@ -41,21 +41,19 @@ nav:
   url: /services
 
   sublinks:
-  - title: Piece 1
-    url: /piece1
   - title: Piece 2
     url: /piece2
   - title: Piece 3
     url: /piece3
-
-- title: Work
-  url: /work
 
 - title: Contact
   url: /contact
 
 - title: Contact Success
   url: /contact-success
+
+- title: Audio and Video Services
+  url: /audio-video-service
 
 # Build settings
 markdown: kramdown
