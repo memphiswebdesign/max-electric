@@ -9261,6 +9261,7 @@ box-shadow: 0px 1px 5px 3px rgba(242,242,242,1);
 .contact-info-area{
     position: relative;
     padding: 100px 0 70px;
+    border-top: 2px solid #eee;
 }
 .contact-form {
     position: relative;
