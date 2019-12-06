@@ -61,9 +61,9 @@
         // and they will be placed into toolbar (class="fancybox-toolbar"` element)
         buttons : [
             'slideShow',
-            'fullScreen',
+            //'fullScreen',
             'thumbs',
-            'share',
+            //'share',
             //'download',
             //'zoom',
             'close'
@@ -4250,7 +4250,7 @@
 ;(function (document, $) {
 	'use strict';
 
-	$.extend(true, $.fancybox.defaults, {
+	$.extend(false, $.fancybox.defaults, {
 		btnTpl : {
 			slideShow :
 				'<button data-fancybox-play class="fancybox-button fancybox-button--play" title="{{PLAY_START}}">' +
@@ -4897,7 +4897,7 @@
 ;(function (document, $) {
 	'use strict';
 
-	$.extend(true, $.fancybox.defaults, {
+	$.extend(false, $.fancybox.defaults, {
 		btnTpl : {
 			share :
 				'<button data-fancybox-share class="fancybox-button fancybox-button--share" title="{{SHARE}}">' +
