@@ -1230,6 +1230,17 @@ header .inner-content {}
     display: flex;
     flex-wrap: wrap;
 }
+
+@media(max-width: 992px) {
+    .main-menu .navigation > li > ul.dropdown-cols {
+        max-height: 55vh;
+        overflow: scroll;
+        border-left: 2px solid #fec144;
+        border-right: 2px solid #fec144;
+        border-bottom: 2px solid #fec144;
+    }
+}
+
 .main-menu .navigation > li > ul.dropdown-cols li {flex: 1 0 50%;}
 .main-menu .navigation > li > ul.dropdown-cols a {padding: 14px 18px;}
 
