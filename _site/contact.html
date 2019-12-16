@@ -297,7 +297,7 @@
                         </div>
                         <p>For Business inquiry fill below form or Troll free number - <a href="tel:901.413.4646">(901) 413-4646</a></p>
                     </div>
-                    <form name="contact" action="/contact-success" data-netlify="true" method="POST" id="contact-form" class="default-form">
+                    <form name="contact" action="/contact-success" data-netlify="true" method="POST" data-netlify-recaptcha="true" id="contact-form" class="default-form">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="input-box">
@@ -313,6 +313,9 @@
                             <div class="col-md-6">
                                 <div class="input-box">    
                                     <textarea name="message" placeholder="Tell us about your project needs.." required=""></textarea>
+                                </div>
+                                <div>
+                                    <div data-netlify-recaptcha="true"></div>
                                 </div>
                                 <div class="button-box">
                                     <!-- <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value=""> -->
